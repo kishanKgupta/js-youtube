@@ -47,3 +47,9 @@ console.log(typeof heros);//object
 console.log(typeof myObj);//object
 //null =>object
 //undefined =>undefined
+
+//------------------MEMORY---------------
+//stack (primitive datatype).......work with pass by value ,created copy
+//heap (non-primitive datatype)......work with pass by reference ,no created any copy
+
+
