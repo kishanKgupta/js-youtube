@@ -55,3 +55,17 @@ const {courseInstructor: master}=course
 console.log(master); //hitesh Sir
 
 //we also use the concept of destructure for Array...
+/*
+//..................API in json......................
+{
+    "name": "kishan",
+    "coursename": "js in hindi",
+    "price": "free"
+}
+//array of object
+[
+    {},
+    {},
+    {}
+]
+*/
