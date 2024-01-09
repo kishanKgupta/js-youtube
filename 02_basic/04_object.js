@@ -12,14 +12,14 @@ tinderUser.isLoggedIn = false
 const obj1 = {1: "a",2:"b"}
 const obj2 = {3:"c",4:"d"}
 const obj3 = {obj1,obj2}
-console.log(obj3);
+//console.log(obj3);
 //{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }
 
 const obj4 = Object.assign({},obj1,obj2)
-console.log(obj4);
+//console.log(obj4);
 //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 const obj5 = {...obj1,...obj2}
-console.log(obj5);
+//console.log(obj5);
 //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
 //Array of object...
@@ -32,13 +32,26 @@ const users = [
 
     }
 ]
-console.log(users[0].email); //kk@gmail.com
+//console.log(users[0].email); //kk@gmail.com
 //when we find the all key of ay object...
-console.log(Object.keys(obj4));
+//console.log(Object.keys(obj4));
 //value come inthe form of array [ '1', '2', '3', '4' ]
-console.log(Object.values(obj4));
+//console.log(Object.values(obj4));
 //value come inthe form of array  [ 'a', 'b', 'c', 'd' ]
 
 //console.log(Object.values(obj4[0])); it is throw error...
-console.log(Object.entries(obj4));
+//console.log(Object.entries(obj4));
 //[ [ '1', 'a' ], [ '2', 'b' ], [ '3', 'c' ], [ '4', 'd' ] ]
+
+//........destructure of object......
+const course = {
+    coursename:"JS in Hindi",
+    price:"999",
+    courseInstructor:"hitesh Sir"
+}
+//new way access
+const {courseInstructor: master}=course
+//console.log(courseInstructor);
+console.log(master); //hitesh Sir
+
+//we also use the concept of destructure for Array...
