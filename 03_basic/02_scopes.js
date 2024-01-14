@@ -32,3 +32,4 @@ function func(num){
 const addTwo = function(num){
     return num+2
 }
+
