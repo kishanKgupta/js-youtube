@@ -30,10 +30,16 @@ chai1();
 (num1,num2) => {
    return num1+num2;
 }
-
+//ecplicit return
 const addNum = (num1,num2,num3) => {
     return num1+num2+num3;
  }
+
+ //implicit return
+const addTwo = (num1,num2) =(num1+num2)
+
+//object
+const Name = (num1,num2) =({"name":"kishan"})
 
 console.log((20,30)) //50
 console.log(addNum(20,330,40)) //390
